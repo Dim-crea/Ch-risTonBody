@@ -9,7 +9,7 @@ export default function Home() {
       <IntroComponent />
       <ProgramComponent />
       <ReservComponent />
-      <BrochureSnip />
+      {/* <BrochureSnip /> */}
       <div className="flex flex-col text-center my-10 ">
         <a>Mentions légales</a>
         <a>Politique de cookies</a>

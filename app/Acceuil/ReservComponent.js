@@ -6,7 +6,7 @@ const ResaCoursBrunch = [
         id: 1,
         offre:"Zumba + Brunch + Yoga",
         prix:"36€",
-        link:"https://square.link/u/4iJYhJUm",
+        link:"https://square.link/u/asuKspEi",
     },
     {
         id: 2,
@@ -18,7 +18,7 @@ const ResaCoursBrunch = [
         id: 3,
         offre:"Brunch + Yoga",
         prix:"32€",
-        link:"https://square.link/u/asuKspEi",
+        link:"https://square.link/u/4iJYhJUm",
     },
     
 ]
@@ -28,13 +28,13 @@ const ResaCours = [
         id: 1,
         offre:"Cours de Zumba",
         prix:"7€",
-        link:"https://square.link/u/VZgwJJuN",
+        link:"https://square.link/u/Co8NB0bY",
     },
     {
         id: 2,
         offre:"Cours de Yoga",
         prix:"7€",
-        link:"https://square.link/u/Co8NB0bY",
+        link:"https://square.link/u/VZgwJJuN",
     },
     {
         id: 3,
@@ -47,7 +47,7 @@ const ResaCours = [
 export default function IntroComponent (){
 
     return(
-        <div className="rounded-3xl bg-fondCard bg-opacity-70 px-4 mx-4 py-4">
+        <div className="rounded-3xl bg-fondCard bg-opacity-70 px-4 mx-4 py-4 lg:w-3/4 flex flex-col lg:place-self-center">
            <h2 className="text-center pb-4 font-bold">Réservation</h2>
             {ResaCoursBrunch.map((res, index) => (
                 <BoutonRésa key={index} props={res.link}>

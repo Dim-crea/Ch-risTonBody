@@ -17,9 +17,10 @@ import { TriangleAlert } from "lucide-react";
 
 export default function ProgramComponent() {
     return (
-        <div className="mx-4 mt-6 mb-10 ">
+        <div className="mx-4 mt-6 mb-10 lg:flex flex-col place-items-center">
             <p className="text-center">Un programme qui rassemble :</p>
-            <Carousel className="mt-4 ">
+            <Carousel className="mt-4 lg:w-3/4">
+                <CarouselPrevious className="hidden lg:block"/>
                 <CarouselContent>
                     <CarouselItem>
                         <div className="rounded-3xl bg-fondCard bg-opacity-60 p-4 flex flex-col">
@@ -70,6 +71,7 @@ export default function ProgramComponent() {
                     </CarouselItem>
                     
                 </CarouselContent>
+                <CarouselNext className="hidden lg:block"/>
             </Carousel>
         </div>
         
